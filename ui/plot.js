@@ -1,7 +1,8 @@
-import { plot } from 'nodeplotlib';
+// import { plot } from 'nodeplotlib';
+const { plot } = require('nodeplotlib');
 
 
-export const plot_sequence = (sequence) => {
+const plot_sequence = (sequence) => {
 	let x = [];
 	let y = [];
 	for (let i = 0; i < sequence.length; i++) {
@@ -12,3 +13,4 @@ export const plot_sequence = (sequence) => {
 	plot(data);
 }
 
+module.exports = { plot_sequence };

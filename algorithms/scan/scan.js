@@ -11,7 +11,7 @@ const set_direction = (head, left_sequence, right_sequence) => {
 	return direction;
 };
 
-export const scan_scheduling = (request) => {
+const scan_scheduling = (request) => {
 	let head = request[0];
 	let seek_sequence = [];
 	let right = [];
@@ -61,8 +61,7 @@ request = [ 89, 183, 37, 122, 14, 124, 65, 67];
 
 console.log(scan_scheduling(request));
 
-exports.scan_scheduling = scan_scheduling;
-
+module.exports = { scan_scheduling };
 // jobs = [ { arrival_time: 94 }, { arrival_time: 147 }, 
 // 		{ arrival_time: 91 }, { arrival_time: 177 }, 
 // 		{ arrival_time: 86 }, { arrival_time: 150 }, 
