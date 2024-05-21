@@ -1,5 +1,4 @@
 
-
 const set_direction = (head, left_sequence, right_sequence) => {
 	let direction = ''
 	let right_start = right_sequence[0];
@@ -57,15 +56,4 @@ const scan_scheduling = (request) => {
 	return seek_sequence;
 };
 
-request = [ 89, 183, 37, 122, 14, 124, 65, 67];
-
-console.log(scan_scheduling(request));
-
 module.exports = { scan_scheduling };
-// jobs = [ { arrival_time: 94 }, { arrival_time: 147 }, 
-// 		{ arrival_time: 91 }, { arrival_time: 177 }, 
-// 		{ arrival_time: 86 }, { arrival_time: 150 }, 
-// 		{ arrival_time: 102 }, { arrival_time: 175 }, 
-// 		{ arrival_time: 130 }, { arrival_time: 135 } ];
-
-// console.log(scan_scheduling(jobs));

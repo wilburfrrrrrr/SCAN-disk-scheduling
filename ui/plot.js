@@ -1,6 +1,4 @@
-// import { plot } from 'nodeplotlib';
 const { plot } = require('nodeplotlib');
-
 
 const plot_sequence = (sequence) => {
 	let x = [];
